@@ -1,0 +1,156 @@
+body{
+  margin:1%; font-size: 18px; background: #2b5982; font-family: fantasy;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  background:  #3673a9; text-align: center; color: black;  padding: 1%;
+
+}
+
+.menubar{
+  background: #1f3f5c;
+  text-align: center; padding: 1%;margin-top: 0.5%; margin-bottom: 0.5%;
+
+}
+
+.menubar ul {
+  background: #1f3f5c;
+  display: flex; flex-flow: row wrap; font-size: 20px;
+}
+
+.menubar ul li{
+  padding: 1%; background: #1f3f5c; flex-grow: 1;
+}
+
+
+
+.menubar ul li:hover{
+  background: #3673a9;
+  border-radius: 20px;
+}
+
+.menubar ul li a{
+  color: #242424;
+}
+
+.menubar ul li:hover a{
+  color: white;
+}
+
+.menubar ul li ul{
+  display: none;position: absolute; width:23%;
+}
+
+.menubar ul li:hover ul{
+  display: block; margin: 0 0 0 0; background:  #3673a9;
+}
+
+section{
+  background: #2b5982; color: white;
+  display: flex;flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0.5%; margin-bottom: 0.5%
+}
+
+section article{
+ width: 25%; padding: 1%; text-align: center;background: #242424;
+
+}
+
+section article h2{
+  font-size: 25px; text-align: center; background: #242424; padding: 2% 2%;
+}
+
+section article p{
+  font-size: 18px;text-align: center; margin-top: 0.5%;  text-align: justify;
+}
+
+.left{
+  display: flex; flex-flow: row wrap;  margin-bottom: 0.5%;
+  border: 2px solid black;
+}
+
+.leftside{
+  display: flex;flex-direction: column; width: 25%; background: #242424; color: white;
+  justify-content: space-around;
+}
+
+.a{
+   border-bottom: 3px solid black; height: 70px;
+}
+
+.b{
+   border-bottom: 3px solid black; height: 70px;
+}
+
+.c{
+  height: 70px;
+}
+
+
+.d{
+   border-bottom: 3px solid black; height: 80px;
+}
+
+
+.e{
+   border-bottom: 3px solid black;height: 80px;
+}
+
+.f{
+  height: 80px;
+}
+
+.f form{
+  justify-content: space-around;
+}
+
+
+.rightside{
+  display: flex;flex-direction: column; width: 75%; background: #1f3f5c; color: white;
+}
+
+footer{
+  background: #3673a9; color: black;
+  display: flex;flex-direction: row; width:100%;
+  justify-content: space-around;
+  margin-top: 0.5%; margin-bottom: 0.5%;
+}
+
+footer article{
+  flex-grow: 1; width: 25%; padding: 1%; background: #3673a9;
+}
+
+footer article h3{
+  font-size: 20px; text-align: center; padding: 1%; background: #1f3f5c; color: white;
+}
+
+footer article p{
+  font-size: 15px; text-align: center; padding: 2% 2%;
+}
+
+@media all and (max-width: 500px){
+  .menubar ul, section, footer{
+    flex-direction: column;
+  }
+
+section article{
+  width:98%;
+}
+
+footer article{
+  width: 98%;
+  border-bottom: 3px solid black ;
+}
+}
